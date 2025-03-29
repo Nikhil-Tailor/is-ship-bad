@@ -48,6 +48,15 @@ input {
     margin-bottom: 20px;
 }
 
+input:focus,
+input:focus-visible,
+input:active,
+input:active:focus {
+    border-color: #ff00b7; /* Change the border color on focus, focus-visible, active, and active focus */
+    background-color: #ffe2f4; /* Change the background color on focus, focus-visible, active, and active focus */
+}
+
+
 button {
     padding: 10px 20px;
     font-size: 1.2em;

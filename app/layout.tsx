@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import {DM_Sans} from "next/font/google";
+import {DM_Sans, Epilogue} from "next/font/google";
 import "./globals.css";
 
-const geistSans = DM_Sans({
+const geistSans = Epilogue({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
