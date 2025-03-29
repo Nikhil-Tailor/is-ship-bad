@@ -16,10 +16,18 @@ async function getShipData(shipName: string) {
         // return data;
 
         if(data.Banned){
+            console.log(data.Type)
             if(data.Type == "FERRY"){
                 return {
                     status: "Bad👎",
                     destination: "Brexit means Brexit try a small boat",
+                    imageUrl: "/thumb-down.webp",
+                    altText: "Bad Ship"
+                };
+            } else if (data.Type == "FREIGHTER"){
+                return {
+                    status: "Bad👎",
+                    destination: "Brexit means Brexit, support British Business",
                     imageUrl: "/thumb-down.webp",
                     altText: "Bad Ship"
                 };
